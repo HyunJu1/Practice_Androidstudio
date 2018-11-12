@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hyunju.project4_ex.Main3Activity">
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="253dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:drawableLeft="@mipmap/ic_launcher_round"
+        android:drawableRight="@mipmap/ic_launcher_round"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal|clip_vertical"
+        android:text="회전하기"
+        app:srcCompat="@android:drawable/btn_star" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="351dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_launcher" />
+</LinearLayout>
