@@ -31,11 +31,21 @@ public class Main3Activity extends AppCompatActivity implements ActionBar.TabLis
         bar.addTab(tabAlbum);
     }
 
-    MyTabFragment myTabFrag[]=new MyTabFragment[3];
-    public void onTabSelected(ActionBar.Tab tab,)
-
-    @Override
+    MyTabFragment myFrags[]=new MyTabFragment[3];
+     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+         MyTabFragment myTabFrag=null;
+         if(myFrags[tab.getPosition()]==null){
+             myTabFrag=new MyTabFragment();
+             Bundle data =new Bundle();
+             data.putString("tabName",tab.getText().toString());
+             myTabFrag.setArguments(data);
+             myFrags[tab.getPosition()]=myTabFrag;
+         }
+         else{
+             myTabFrag=myFrags[tab.getPosition()];
+         }
+         ft.replace(android.R.id.content,myTabFrag);
     }
 
     @Override

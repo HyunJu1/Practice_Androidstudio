@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-public static class MyTabFragment extends android.support.v4.app.Fragment {
+public  class MyTabFragment extends android.support.v4.app.Fragment {
     String tabName;
 
     public void onCreate(Bundle savedInstanceState) {
